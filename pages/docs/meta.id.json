@@ -1,0 +1,18 @@
+{
+	"getting-started": "Memulai",
+	"iot-cloud-service": "Layanan Cloud IoT",
+	"global-configuration": "Global Configuration",
+	"data-fetching": "Data Fetching",
+	"error-handling": "Error Handling",
+	"revalidation": "Auto Revalidation",
+	"conditional-fetching": "Conditional Data Fetching",
+	"arguments": "Arguments",
+	"mutation": "Mutation",
+	"pagination": "Pagination",
+	"prefetching": "Prefetching",
+	"with-nextjs": "Usage with Next.js",
+	"suspense": "Suspense",
+	"advanced": "Advanced",
+
+	"change-log": "Change Log Server"
+}

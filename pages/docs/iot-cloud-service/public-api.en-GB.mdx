@@ -1,0 +1,28 @@
+import Callout from 'nextra-theme-docs/callout';
+
+# Public API
+
+Let's start from easy level, _yup_ Public API, you don't need to mess around with POST Request and stuff, you just need to go to a page then you'll see the output.
+
+## Query
+
+REST Url : https://technonatura.herokuapp.com/api `GET`
+
+<Callout emoji="💡">
+	What is a query? Query is data that sent to a page using "?" then add the
+	query of the name then the data. For example:{' '}
+	<code>https://technonatura.herokuapp.com/api/getIoTCloudApp?appId=123</code>
+
+The Query name is appId and the data is "123", if you want to add more data you just need to add "&". <code>https://technonatura.herokuapp.com/api/getIoTCloudApp?data1=123&data2=hello!</code>
+
+</Callout>
+
+- `appId`: Query for `getIoTCloudApp` page, please input your IoT Cloud Service App Id
+- `sensorId`: Query for `getSensor` page, please input your IoT Cloud Service App's sensor's Id
+
+## Return Values
+
+- `message`: `string` data type, the message describes the response
+- `status`: `string` data type, the status that describes the status of response; `success` | `warning` | `error` | `info`
+- `app`: the app data
+- `sensor`: the sensor data

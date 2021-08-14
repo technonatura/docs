@@ -1,0 +1,31 @@
+import Callout from 'nextra-theme-docs/callout';
+
+# API Pribadi
+
+Sekarang mari bermain-main dengan Private API! Di bagian ini Anda akan mempelajari cara mengunggah data sensor Anda ke database kami!
+
+## Isi
+
+REST URL : https://technonatura.herokuapp.com/iot/add/data/ `POST`
+
+tipe konten: `aplikasi/json`
+
+- `iotAppToken`: Token Aplikasi Cloud IoT Anda, terletak di pengaturan aplikasi Anda.
+- `sensors`: Objek tombol (nama sensor), data yang akan diunggah.
+
+<Callout emoji="💡">
+Misalnya jika Anda ingin mengunggah 23 data integer ke Sensor DHT11 Anda, maka konten Anda akan terlihat seperti ini:
+     ```
+     {
+         "iotAppToken": [tempelkan token aplikasi Anda di sini],
+         "sensors": {
+             "DHT11": 23
+         }
+     }
+     ```
+</Callout>
+
+## Mengembalikan Nilai
+
+- `message`: tipe data `string`, pesan menjelaskan respons
+- `status`: tipe data `string`, status yang menjelaskan status respons; `sukses` | `peringatan` | `kesalahan` | `info`

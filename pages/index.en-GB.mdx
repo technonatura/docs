@@ -1,0 +1,63 @@
+---
+title: TechnoNatura Developer Documentation
+---
+
+import Callout from 'nextra-theme-docs/callout';
+import Features from 'components/features';
+import Bleed from 'nextra-theme-docs/bleed';
+
+<style jsx global>{`
+	body {
+		background-image: radial-gradient(#ddd 1px, transparent 0), radial-gradient(#ddd
+					1px, transparent 0);
+		background-position: 0 0, 25px 25px;
+		background-size: 50px 50px;
+	}
+	.dark body {
+		background-image: radial-gradient(#333 1px, transparent 0), radial-gradient(#333
+					1px, transparent 0);
+	}
+`}</style>
+
+{
+// wrapped with {} to mark it as javascript so mdx will not put it under a p tag
+}
+{<h1 className="text-center font-extrabold md:text-5xl mt-8">TechnoNatura Docs</h1>}
+
+<Bleed full>
+	<Features />
+</Bleed>
+
+This website is used to document TechnoNatura Server's Public API and Private API (Cloud Service API). The APIs are free for ever even with the database.
+
+<Callout emoji="✅">
+	We open the [server
+	codebase](https://github.com/technonatura-org/technonatura-server) on GitHub
+	thus you can contribute and make innovation together!
+</Callout>
+
+We don't use this documentation website to document our server structure. Instead we use our "Engineering Notebook" on our notion page.
+
+<Callout emoji="💡">
+	Checkout our Engineering Notebooks on our Notion Page! [Server Engineering
+	Notebook](https://shoru.vercel.app/tn-ops-eb) ; [Dashboard Engineering
+	Notebook](https://shoru.vercel.app/tn-dashboard-eb)
+</Callout>
+
+## Public REST API
+
+The following is a list of the Public APIs that we have created.
+
+- **Users** API - show list of users, but only shows non sensitive data.
+- **IoT Cloud Service Public API**
+  - **Get Sensor**
+  - **Get IoT Cloud App**
+
+## Private API (The Cloud Service API)
+
+- **IoT Cloud Service API**
+  - **Upload Sensor Data to Database**
+
+## GraphQL API
+
+This type of API is still in the development stage, be patient.

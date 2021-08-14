@@ -1,0 +1,28 @@
+import Callout from 'nextra-theme-docs/callout';
+
+# API Publik
+
+Mari kita mulai dari level mudah, _yup_ API Publik, Anda tidak perlu dipusingkan dengan POST Request dan sejenisnya, Anda hanya perlu membuka halaman lalu Anda akan melihat hasilnya.
+
+## Permintaan
+
+REST Url : https://technonatura.herokuapp.com/api `GET`
+
+<Callout emoji="💡">
+Apa itu kueri? Query adalah data yang dikirim ke suatu halaman menggunakan "?" lalu tambahkan
+permintaan nama kemudian data. Sebagai contoh:{' '}
+<code>https://technonatura.herokuapp.com/api/getIoTCloudApp?appId=123</code>
+
+Nama Query adalah appId dan datanya adalah "123", jika Anda ingin menambahkan lebih banyak data, Anda hanya perlu menambahkan "&". <code>https://technonatura.herokuapp.com/api/getIoTCloudApp?data1=123&data2=hello!</code>
+
+</Callout>
+
+- `appId`: Query untuk halaman `getIoTCloudApp`, silakan masukkan Id Aplikasi Layanan Cloud IoT Anda
+- `sensorId`: Permintaan untuk halaman `getSensor`, silakan masukkan ID sensor Aplikasi Layanan Cloud IoT Anda
+
+## Mengembalikan Nilai
+
+- `message`: tipe data `string`, pesan menjelaskan respons
+- `status`: tipe data `string`, status yang menjelaskan status respons; `sukses` | `peringatan` | `kesalahan` | `info`
+- `app`: data aplikasi
+- `sensor`: data sensor

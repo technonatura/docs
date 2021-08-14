@@ -1,0 +1,19 @@
+{
+	"index": {
+		"title": "Pembukaan",
+		"type": "nav",
+		"hidden": true
+	},
+	"docs": {
+		"title": "Dokumentasi",
+		"type": "nav"
+	},
+	"examples": {
+		"title": "Playground",
+		"type": "nav"
+	},
+	"blog": {
+		"title": "Blog",
+		"type": "nav"
+	}
+}

@@ -1,0 +1,63 @@
+---
+title: TechnoNatura Developer Documentation
+---
+
+import Callout from 'nextra-theme-docs/callout';
+import Features from 'components/features';
+import Bleed from 'nextra-theme-docs/bleed';
+
+<style jsx global>{`
+	body {
+		background-image: radial-gradient(#ddd 1px, transparent 0), radial-gradient(#ddd
+					1px, transparent 0);
+		background-position: 0 0, 25px 25px;
+		background-size: 50px 50px;
+	}
+	.dark body {
+		background-image: radial-gradient(#333 1px, transparent 0), radial-gradient(#333
+					1px, transparent 0);
+	}
+`}</style>
+
+{
+// wrapped with {} to mark it as javascript so mdx will not put it under a p tag
+}
+{<h1 className="text-center font-extrabold md:text-5xl mt-8">TechnoNatura Docs</h1>}
+
+<Bleed full>
+	<Features />
+</Bleed>
+
+Website ini digunakan untuk mendokumentasikan TechnoNatura Server Public API dan Private API (Cloud Service API). API gratis selamanya bahkan dengan database. (kami kemungkinan dimasa depan akan membuka donasi jika database sudah menipis)
+
+<Callout emoji="✅">
+	Kami membuka [_codebase
+	server_](https://github.com/technonatura-org/technonatura-server) di GitHub
+	sehingga Anda dapat berkontribusi dan membuat inovasi bersama!
+</Callout>
+
+Kami tidak menggunakan situs web dokumentasi ini untuk mendokumentasikan struktur server kami. Alih-alih, kami menggunakan "Buku Catatan Teknik" kami di halaman [notion](https://notion.so) kami.
+
+<Callout emoji="💡">
+	Lihat Buku Catatan Teknik kami di Halaman Gagasan kami! [Teknik Server
+	Notebook](https://shoru.vercel.app/tn-ops-eb); [Teknik Dasbor
+	Notebook](https://shoru.vercel.app/tn-dashboard-eb)
+</Callout>
+
+## Public REST API
+
+Berikut ini lah list Public API yang telah kita buat.
+
+- **Users** API - menampilkan daftar pengguna, tetapi hanya menampilkan data yang tidak sensitif.
+- **API Publik Layanan Cloud IoT**
+  - **Dapatkan Sensor**
+  - **Dapatkan Aplikasi Cloud IoT**
+
+## API Pribadi (API Layanan Cloud)
+
+- **API Publik Layanan Cloud IoT**
+  - **Mengupload Data Sensor**
+
+## GraphQL API
+
+Jenis API ini masih dalam tahap pengembangan sabar yaaa.
